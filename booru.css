@@ -989,7 +989,14 @@ div#c-static::after {
 
 /* Hide the original banner img */
 #app-name-header img {
-    opacity: 0;
+    opacity: 1;
+    display: block;
+    /* background-image: var(--extension-banner-url); */ 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 270px; /* Same height as the original image */
+    width: 100%;   
 }
 
 /* Apply a new background image to the parent <a> tag */
