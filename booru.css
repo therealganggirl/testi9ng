@@ -1,0 +1,1006 @@
+/* main page where images are */
+
+
+    /* website logo make it be in center */
+
+
+header#top #app-name-header {
+    font-size: var(--text-xxl);
+    height: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+/* General styling for the nav container */
+#nav {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #333, #555);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+    /* Main menu styling */
+#main-menu, #subnav-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#main-menu li, #subnav-menu li {
+    padding: 8px 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+}
+
+#main-menu a, #subnav-menu a {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+}
+
+    /* Current page indicator */
+#main-menu .current {
+    background: #FFD700;
+    color: #333;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+    /* Hover effect for links */
+#main-menu li:hover, #subnav-menu li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+    /* Hover effect for links */
+#main-menu a:hover, #subnav-menu a:hover {
+    color: #FFD700;
+}
+
+
+    /* Style for "More" item */
+#nav-more a {
+    color: #FFD700;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+    /* Mobile-friendly adjustments */
+@media (max-width: 600px) {
+    #main-menu, #subnav-menu {
+        gap: 10px;
+    }
+
+    #main-menu a, #subnav-menu a {
+        font-size: 0.9rem;
+    }
+}
+
+    /* this is for the pagination bar at bottom */
+
+.paginator {
+    background-color: #4f4f6d;
+    padding: 10px 20px;
+    border-radius: 8px;
+     /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+}
+
+.paginator a, .paginator .paginator-current {
+    padding: 8px 12px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.paginator-prev, .paginator-next {
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    /* this one is for the post container grid  */ 
+
+.post-gallery.post-gallery-grid.post-gallery-225, 
+.post-gallery.post-gallery-grid.post-gallery-150, 
+.post-gallery.post-gallery-grid.post-gallery-180, 
+.post-gallery.post-gallery-grid.post-gallery-270, 
+.post-gallery.post-gallery-grid.post-gallery-360, 
+.post-gallery.post-gallery-grid.post-gallery-720 {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+
+article {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+    /* this one is for the sidebar navigation */
+
+aside#sidebar {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+     /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    /*margin-bottom: 20px;*/
+    /*margin-top: 30px;*/
+}
+
+/* this is inside a post page */
+
+    /* this is for the post belongs to a parent message */
+
+.notice.notice-small.post-notice.post-notice-child {
+    border-radius: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+div#c-posts .post-notice.post-notice-child {
+    background: #4f4f6d3d;
+    border-width: medium !important;
+    border-color: #4F5067 !important;
+    padding: 10px !important;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0) !important; */
+    border-radius: 20px;
+    border-collapse: unset;
+    /* margin-top: 10px !important; */
+    /* margin-bottom: -30px; */
+}
+
+
+    /* this post has 1 child notice message  */
+
+div#c-posts .post-notice.post-notice-parent {
+    background: #4f4f6d3d;
+    border-width: medium !important;
+    border-color: #4F5067 !important;
+    padding: 10px !important;
+    border-radius: 20px;
+    border-collapse: unset;
+}
+
+div#c-posts .post-notice {
+    font-size: 15px;
+    text-align: center;
+}
+
+    /* this is for post pending approval message */
+
+div#c-posts .post-notice.post-notice-pending {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    border-radius: 20px;
+    border-collapse: unset;
+}
+
+
+
+    /* this is for the image inside the post */
+
+section.image-container.note-container.blacklisted {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+     /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+div#c-posts div#a-show .image-container {
+    margin: unset !important;
+}
+
+    /* this is for the image rezied notice */
+
+div#c-posts .post-notice.post-notice-resized {
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    border-collapse: unset;
+    margin-top: 10px;
+}
+
+    /* this is for the favorite button */
+
+.ui-button {
+    width: 100%; 
+    padding: 10px 0; 
+    background-color: #007bff; 
+    color: white; 
+    border: none;
+    border-radius: 8px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.ui-button:hover {
+    background-color: #51b300db !important; 
+}
+
+.ui-button svg {
+    margin-right: 8px; 
+    vertical-align: middle; 
+}
+
+    /* this is for post notice search */
+
+div#c-posts .post-notice.post-notice-search {
+    background: #4f4f6d3d;
+    border-width: medium !important;
+    border-color: #4F5067 !important;
+    padding: 10px !important;
+    border-radius: 20px;
+    border-collapse: unset;
+    margin-bottom: 5px;
+}
+
+
+    /* this is comment section insdide post page */
+
+section#comments {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+}
+
+menu#post-sections {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    text-align: center;
+}
+
+    /* this is for artist commentary insdide post  */
+
+div#c-posts div#a-show #artist-commentary {
+    border-radius: 20px !important;
+    margin-top: 5px !important;
+    border-width: medium !important;
+    border-color: #4F5067 !important;
+}
+
+/* this one is for the login page */
+
+div#c-sessions {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+     /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* this is for direct messages from people */
+
+div#c-dmails {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    border-collapse: unset;
+    margin-top: 10px;
+}
+
+/* this one is for the user page when looking at a user */
+
+div#c-users {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(255 0 0);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* for the comments tab where comment feed is */
+
+div#c-comments {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+     /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+}
+
+section#blacklist-box {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+.post.flex.sm\:flex-col.gap-4.post-preview.post-preview-fit-compact.post-preview-180.blacklisted {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+}
+
+    /* this is for the search box under comment tab */
+
+
+.simple_form.search-form.inline-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    background-color: #68688fbf; 
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border: 1px solid #444; 
+    max-width: 1000px; 
+    margin: auto;
+    color: #d9d9e3; 
+}
+
+
+.simple_form .input {
+    display: block;
+    width: auto; 
+}
+
+
+.simple_form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #cccccc; 
+}
+
+
+.simple_form input[type="text"], .simple_form select {
+    width: 100%; 
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #555; 
+    border-radius: 4px;
+    background-color: #1f1f2f; 
+    color: #f1f1f1; 
+    transition: border-color 0.3s ease;
+}
+
+
+.simple_form input[type="text"]:focus, .simple_form select:focus {
+    border-color: #ff6347; 
+    outline: none;
+}
+
+
+.simple_form input[type="submit"] {
+    padding: 12px 20px;
+    background-color: #3b3be7a6; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: 100%; 
+}
+
+
+.simple_form input[type="submit"]:hover {
+    background-color: #ff6347; 
+}
+
+@media (max-width: 900px) {
+    .simple_form .input {
+        width: 45%; 
+    }
+}
+
+@media (max-width: 600px) {
+    .simple_form .input {
+        width: 100%;
+    }
+}
+
+    /* also for search tab */
+
+.post.md\:flex.gap-4 {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    border-collapse: unset;
+    margin-top: 10px;
+}
+
+
+/* this is for notes tab */
+
+table#notes-table {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    border-collapse: unset;
+    margin-top: 10px;
+}
+
+    /* this one is for the changes under notes tab */
+
+    div#p-standard-listing {
+        background: #4f4f6d3d;
+        border-width: medium;
+        border-color: #4F5067;
+        padding: 10px;
+        /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+        border-radius: 20px;
+        border-collapse: unset;
+        margin-top: 10px;
+    }
+
+/* this one is for artists tab */
+
+table#artists-table {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    border-collapse: unset;
+    margin-top: 10px;
+}
+
+    /* this is for new artists tab */
+
+div#c-artists {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    border-radius: 20px;
+    border-collapse: unset;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+div#a-new {
+    background-color: #3c3c58;
+    padding: 20px;
+    border-radius: 10px;
+}
+    
+    
+    
+  
+form#new_artist {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+input#search_url_matches {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #1f1f2f;
+    color: #f1f1f1;
+    transition: border-color 0.3s ease;
+}
+
+table#artist-urls-table {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    border-collapse: unset;
+    margin-top: 10px;
+}
+
+    /* artist user view page */
+
+#blacklist-box.inline-blacklist #blacklist-list li a {
+    max-width: 100%;
+}
+
+
+/* this is for the tags page */
+
+div#c-tags {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    border-collapse: unset;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+table#tags-table {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    border-collapse: unset;
+    margin-top: 10px;
+}
+
+table#tag-aliases-table {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    border-collapse: unset;
+    margin-top: 10px;
+}
+
+table#tag-implications-table {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    border-collapse: unset;
+    margin-top: 10px;
+}
+
+div#c-bulk-update-requests {
+    display: flex;
+    justify-content: center;
+}
+
+div#c-related-tags {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    border-collapse: unset;
+    margin-top: 10px;
+}
+
+table.striped.w-full.fixed-width-container {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    border-collapse: unset;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+/* this is for the pools tab */
+
+    /* this is for listing page */
+
+table#pools-table {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    border-collapse: unset;
+    margin-top: 10px;
+}
+
+
+form#new_pool {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    border-collapse: unset;
+    margin-top: 10px;
+    text-align-last: center;
+}
+
+/* thisd  is for wiki page */
+
+
+
+
+/* this is for forum tab */
+
+
+table#forum-topics-table {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    border-collapse: unset;
+    margin-top: 10px;
+}
+
+    /* this is for bulk update */
+
+table#bulk-update-requests-table {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    border-collapse: unset;
+    margin-top: 10px;
+}
+
+
+    /* this is for search in forum tab */
+    
+table#forum-posts-table {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    border-collapse: unset;
+    margin-top: 10px;
+}
+
+
+    /*inside forum topic posts */
+
+
+div#c-forum-topics {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+}
+
+
+/* this is for page not found error */
+
+    /* this is for error page adding image of loli with chickens lol  */
+
+div#c-static::after {
+    content: "";
+    display: block;
+    width: 650px;
+    height: 500px;
+    margin: 10px auto 0;
+    /* background-image: var(--extension-chicken-url); */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* this is for the footer at bottom of page */
+
+/* General footer styling */
+#page-footer {
+    background-color: #333; /* Dark background for contrast */
+    color: #ddd; /* Light text color for readability */
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 2px solid #444;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+/* Footer link styling */
+#page-footer a {
+    color: #ffd700; /* Golden color for links */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#page-footer a:hover {
+    color: #fff; /* Brighter on hover for emphasis */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Separator styling */
+#page-footer::after {
+    content: '/';
+    color: #666;
+    margin: 0 8px;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+/* Remove separators after the last link */
+#page-footer a:last-child::after {
+    content: "";
+}
+
+/* GitHub icon styling */
+#page-footer .social-icon img.icon {
+    height: 20px;
+    filter: brightness(0) invert(1); /* Make the icon white */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#page-footer .social-icon:hover img.icon {
+    transform: rotate(15deg) scale(1.1); /* Rotate and zoom effect on hover */
+    filter: brightness(1) invert(0.8); /* Brighten on hover */
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 600px) {
+    #page-footer {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+/* this is for the tags on the side and tag box when hovering over image */
+
+
+
+/* General styling for the tooltip container */
+.tippy-box[data-theme~="common-tooltip"] {
+    background-color: #222;
+    color: #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    padding: 12px;
+    max-width: 300px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Tooltip header styling */
+.post-tooltip-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 8px;
+}
+
+/* User link styling */
+.post-tooltip-header .user {
+    font-weight: bold;
+    color: #FFD700; /* Golden color for user link */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.post-tooltip-header .user:hover {
+    color: #fff;
+}
+
+/* Time link styling */
+.post-tooltip-date {
+    color: #888;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.post-tooltip-date:hover {
+    color: #ddd;
+}
+
+/* Score and vote buttons */
+.post-tooltip-score .post-votes {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.post-tooltip-score .post-votes a {
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+.post-tooltip-score .post-votes a:hover {
+    color: #FFD700;
+}
+
+.post-score a {
+    color: #FFD700;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.post-score a:hover {
+    color: #fff;
+}
+
+/* Comment count styling */
+.post-tooltip-comments {
+    display: flex;
+    align-items: center;
+    color: #888;
+    gap: 5px;
+}
+
+.post-tooltip-comments svg {
+    width: 14px;
+    height: 14px;
+}
+
+/* Rating and dimensions */
+.post-tooltip-rating,
+.post-tooltip-dimensions {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.post-tooltip-rating:hover,
+.post-tooltip-dimensions:hover {
+    color: #fff;
+}
+
+/* Source link styling */
+.post-tooltip-source svg {
+    width: 14px;
+    height: 14px;
+    fill: #888;
+    transition: fill 0.3s ease;
+}
+
+.post-tooltip-source:hover svg {
+    fill: #FFD700;
+}
+
+/* Popup menu button styling */
+.popup-menu-button {
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+.popup-menu-button:hover {
+    color: #FFD700;
+}
+
+/* Tooltip body styling */
+.post-tooltip-body {
+    margin-top: 8px;
+}
+
+/* Tag list styling */
+.tag-list .search-tag {
+    display: inline-block;
+    background-color: #333;
+    color: #ddd;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin: 2px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tag-list .search-tag:hover {
+    background-color: #FFD700;
+    color: #222;
+}
+
+/* Tooltip arrow styling */
+.tippy-arrow {
+    color: #222;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* this is for media assest viewer page */
+
+.media-asset-sidebar.flex-none.md\:w-360px {
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    border-collapse: unset;
+    /* margin-top: 10px; */
+}
+
+.media-asset-component {
+    --min-asset-height: 320px;
+    background: #4f4f6d3d;
+    border-width: medium;
+    border-color: #4F5067;
+    padding: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
+    border-radius: 20px;
+    border-collapse: unset;
+    /* margin-top: 10px; */
+}
+
+
+    /* change the arrow styling right mostly */
+
+.media-asset-component .media-asset-paginator-prev:hover, .media-asset-component .media-asset-paginator-next:hover {
+    color: #ffffff !important;
+    background-color: #ff0000 !important;
+}
+
+.media-asset-component .media-asset-paginator-prev, .media-asset-component .media-asset-paginator-next {
+    opacity: 0.5 !important;
+    margin: 20px !important;
+}
+
+
+
+/* Hide the original banner img */
+#app-name-header img {
+    opacity: 0;
+}
+
+/* Apply a new background image to the parent <a> tag */
+#app-name-header {
+    display: block;
+    /* background-image: var(--extension-banner-url); */ 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 270px; /* Same height as the original image */
+    width: 100%;   /* Adjust width based on your design */
+}
+
+
