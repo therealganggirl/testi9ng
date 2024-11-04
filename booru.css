@@ -472,7 +472,7 @@ table#notes-table th, table#notes-table td {
 
     /* this one is for the changes under notes tab */
 
-    div#p-standard-listing {
+    table#note-versions-table {
         background: #4f4f6d3d;
         border-width: medium;
         border-color: #4F5067;
