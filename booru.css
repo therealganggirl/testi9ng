@@ -459,7 +459,16 @@ table#notes-table {
     border-radius: 20px;
     border-collapse: unset;
     margin-top: 10px;
+    font-size: clamp(-1px, 2vw, 1rem);
+    line-height: 1.25em;
 }
+
+table#notes-table th, table#notes-table td {
+    font-size: inherit;
+    padding: 5px;
+}
+
+
 
     /* this one is for the changes under notes tab */
 
