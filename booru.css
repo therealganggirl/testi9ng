@@ -498,18 +498,17 @@ table#artists-table {
 
     /* this is for new artists tab */
 
-div#c-artists {
-    background: #4f4f6d3d;
-    border-width: medium;
-    border-color: #4F5067;
-    padding: 10px;
-    border-radius: 20px;
-    border-collapse: unset;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+table#artists-table {
+    font-size: clamp(8px, 0vw, 0rem);
+    line-height: 1.25em;
 }
+
+table#artists-table th, table#artists-table td {
+    font-size: inherit;
+    padding: 0px;
+    text-align: left;
+}
+
     
 div#a-new {
     background-color: #3c3c58;
