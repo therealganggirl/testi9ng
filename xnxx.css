@@ -1,0 +1,470 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212 !important;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Content container styling */
+#content {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+/* Header styling */
+#header {
+    background: linear-gradient(90deg, #1f1f1f, #333);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-xnxx img {
+    max-height: 50px;
+}
+
+.topbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.topbar a:hover {
+    color: #f5a623;
+}
+
+/* Search bar styling */
+#xnxx-search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#xnxx-search-bar .form-control {
+    border: 2px solid #555;
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    width: 300px;
+    transition: border-color 0.3s ease;
+}
+
+#xnxx-search-bar .form-control:focus {
+    border-color: #f5a623;
+    outline: none;
+}
+
+#xnxx-search-bar .btn-primary {
+    background-color: #f5a623;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#xnxx-search-bar .btn-primary:hover {
+    background-color: #d48b1c;
+}
+
+/* Footer styling */
+#footer {
+    background-color: rgb(31, 31, 31) !important;
+    padding: 20px !important;
+}
+
+#footer a {
+    color: #f5a623;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+#footer a:hover {
+    color: #fff;
+}
+
+/* Button and link hover effects */
+a {
+    color: #f5a623;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #fff;
+}
+
+#side-categories.side-cover, .side-categories-block.side-cover {
+    background: #1a1a1a !important;
+}
+
+/* Sidebar styling */
+#side-categories #side-cat-list {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#side-categories ul li a {
+    color: #e0e0e0;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#side-categories ul li a:hover {
+    background-color: #f5a623;
+    color: #1e1e1e;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f5a623;
+}
+
+
+/* Header Topbar */
+#header .topbar {
+    background: none !important; /* Removed the URL background */
+    background-size: auto 100%;
+    display: block;
+    height: 72px;
+    padding: 7px;
+    position: relative;
+}
+
+#header #site-nav {
+    background: none !important;
+}
+
+/* Centering the Site Navigation */
+#site-nav {
+    display: flex;
+    justify-content: center; /* Center the navigation tabs horizontally */
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    position: relative; /* Keeps it within the header's flow */
+}
+
+/* Navigation Tabs */
+#site-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px !important;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#site-nav a:hover {
+    color: #f5a623;
+}
+
+/* Search Bar */
+#xnxx-search-bar .form-control {
+    border: 2px solid #555;
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    width: 250px;
+    transition: border-color 0.3s ease;
+}
+
+#xnxx-search-bar .form-control:focus {
+    border-color: #f5a623;
+    outline: none;
+}
+
+#xnxx-search-bar .btn-primary {
+    background-color: #f5a623;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#xnxx-search-bar .btn-primary:hover {
+    background-color: #d48b1c;
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/* Styling the Tile Container */
+.thumb-block.thumb-cat {
+    padding: 10px;
+    padding-left: 10px !important;
+    background: #1c1c1c;
+    border: 1px solid #70707057;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+    margin: 5px;
+}
+
+/* Hover Effect on Tile */
+.thumb-block.thumb-cat:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    background: #1A1A93; /* Slightly brighter background on hover */
+}
+
+/* Thumbnail Image */
+.thumb-block.thumb-cat .thumb img {
+    width: 100%; /* Full width of the container */
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.thumb-block.thumb-cat .thumb img:hover {
+    opacity: 0.9; /* Slight dim on hover */
+}
+
+/* Title Styling */
+.thumb-block.thumb-cat .title a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f5a623; /* Bright, engaging color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.thumb-block.thumb-cat .title a:hover {
+    color: #ffffff; /* Switch to white on hover */
+}
+
+/* View Count Styling */
+.thumb-block.thumb-cat .qtt a {
+    font-size: 14px;
+    color: #ccc; /* Light gray */
+    text-decoration: none;
+    margin-top: 5px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.thumb-block.thumb-cat .qtt a:hover {
+    color: #f5a623; /* Match title hover color */
+}
+
+/* Progress Bar Styling */
+.thumb-block.thumb-cat .videopv .progress {
+    background: #333; /* Dark background for progress bar */
+    border-radius: 5px;
+    height: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.thumb-block.thumb-cat .videopv .progress .bar {
+    background: #f5a623; /* Bright yellow-orange */
+    height: 100%;
+    width: 0%; /* Default to 0% */
+    transition: width 0.3s ease;
+}
+
+/* Animate Progress Bar */
+.thumb-block.thumb-cat:hover .videopv .progress .bar {
+    width: 100%; /* Fill on hover */
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////*/
+
+
+.mozaique .premium-results-line {
+    /* background: linear-gradient(275deg, #770101, #670909) !important; */
+    background: repeating-linear-gradient(156deg, #4525cb7a, #350b0bad 100px) !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    border-top: unset !important;
+    border-bottom: unset !important;
+    -webkit-border-image: unset !important;
+    border-image: unset !important;
+    border-radius: 15px !important;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/* Pagination Styling */
+.pagination ul {
+    display: flex !important;
+    justify-content: center !important;
+    margin: 20px 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+.pagination ul li a {
+    color: #f5a623 !important;
+    text-decoration: none !important;
+    padding: 10px 15px !important;
+    border-radius: 5px !important;
+    margin: 0 5px !important;
+    background-color: #1c1c1c !important;
+    transition: background-color 0.3s ease, color 0.3s ease !important;
+}
+
+.pagination ul li a.active, 
+.pagination ul li a:hover {
+    background-color: #f5a623 !important;
+    color: #1c1c1c !important;
+    font-weight: bold !important;
+}
+
+/* Filter Button Styling */
+.filters-opener {
+    background: none;
+    border: 1px solid #555;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filters-opener:hover {
+    background-color: #f5a623;
+    color: #1c1c1c;
+}
+
+
+/* Premium Badge */
+.thumb-under .video-gold-cont .gold-plate {
+    background-color: #ffd700;
+    color: #1c1c1c;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* Premium Section Styling */
+.premium-results-line {
+    background: linear-gradient(90deg, #1f1f1f, #333);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.premium-results-line-title a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.premium-results-line-title a:hover {
+    color: #fff;
+}
+
+
+
+
+#content-thumbs {
+    display: flex
+;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.thumb-block {
+    background-color: #2d1f1f;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+/* Hover Effect */
+.thumb-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Thumbnail Image */
+.thumb img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #333;
+    transition: opacity 0.3s ease;
+}
+
+.thumb-under p a {
+    color: #f5a623;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+.thumb-block {
+    display: inline-block;
+    margin: 10px !important;
+    /* padding-bottom: 7px; */
+    /* padding-left: unset !important; */
+    position: relative;
+    text-align: center;
+    vertical-align: text-top;
+    width: 290px;
+    padding: 7px !important;
+}
+
+
+#related-videos .thumb-block {
+    float: unset !important;
+    font-size: .975em;
+    width: 20%;
+}
+
+.video-page #video-right {
+    float: unset !important;
+}
+
+
+.mozaique.mozaique-left-bordered {
+    border-left: 0px !important;
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+    text-align: center !important;
+}
