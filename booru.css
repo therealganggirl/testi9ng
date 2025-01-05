@@ -1,97 +1,6 @@
 /* main page where images are */
 
 
-        /* Modern dark theme styling for the news block */
-
-        
-#news-updates {
-    position: relative;
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 15px 15px !important;
-    border-radius: 15px;
-    box-shadow: 0px 0px 8px rgb(193 31 31);
-    font-family: 'Arial', sans-serif;
-    color: #e0e0e0;
-}
-
-#news-updates ul {
-    list-style-type: disclosure-closed;
-    padding: 5px !important;
-    margin: 5px !important;
-}
-
-
-#news-updates li {
-    padding: 15px !important;
-    background: #3b3b3b;
-    border: 1px solid #505050;
-    border-radius: 10px;
-    transition: background 0.3s, transform 0.2s;
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 5px 0px !important;
-}
-
-#news-updates li:hover {
-    background: #454545;
-    transform: scale(1.02);
-}
-
-#news-updates b {
-    font-weight: 700;
-    color: #f1f1f1;
-}
-
-#news-updates a {
-    color: #4da6ff;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-#news-updates a:hover {
-    text-decoration: underline;
-    color: #80c1ff;
-}
-
-/* Style for the close button */
-#close-news-ticker-link {
-    display: inline-block;
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    background-color: #1f0d0d;
-    border: none;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-#close-news-ticker-link:hover {
-    background-color: #ff3333;
-    transform: scale(1.15);
-}
-
-#close-news-ticker-link svg {
-    width: 20px;
-    height: 20px;
-    fill: #fff;
-    vertical-align: middle;
-    margin-top: 7px;
-}
-
-#close-news-ticker-link:focus {
-    outline: none;
-    box-shadow: 0 0 8px #ff9999;
-}
-
-
-
-
     /* website logo make it be in center */
 
 
@@ -550,11 +459,20 @@ table#notes-table {
     border-radius: 20px;
     border-collapse: unset;
     margin-top: 10px;
+    font-size: clamp(-1px, 2vw, 1rem);
+    line-height: 1.25em;
 }
+
+table#notes-table th, table#notes-table td {
+    font-size: inherit;
+    padding: 5px;
+}
+
+
 
     /* this one is for the changes under notes tab */
 
-    div#p-standard-listing {
+    table#note-versions-table {
         background: #4f4f6d3d;
         border-width: medium;
         border-color: #4F5067;
@@ -580,18 +498,17 @@ table#artists-table {
 
     /* this is for new artists tab */
 
-div#c-artists {
-    background: #4f4f6d3d;
-    border-width: medium;
-    border-color: #4F5067;
-    padding: 10px;
-    border-radius: 20px;
-    border-collapse: unset;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+table#artists-table {
+    font-size: clamp(8px, 0vw, 0rem);
+    line-height: 1.25em;
 }
+
+table#artists-table th, table#artists-table td {
+    font-size: inherit;
+    padding: 0px;
+    text-align: left;
+}
+
     
 div#a-new {
     background-color: #3c3c58;
@@ -641,19 +558,16 @@ table#artist-urls-table {
 
 /* this is for the tags page */
 
-div#c-tags {
-    background: #4f4f6d3d;
-    border-width: medium;
-    border-color: #4F5067;
-    padding: 10px;
-    /* box-shadow: 0px 0px 10px 0px rgb(255 0 0); */
-    border-radius: 20px;
-    border-collapse: unset;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
+table#tags-table {
+    font-size: clamp(5px, 3vw, 2rem);
+    line-height: 1.25em;
 }
 
+table#tags-table th, table#tags-table td {
+    font-size: inherit;
+    padding: 8px;
+    text-align: left;
+}
 
 table#tags-table {
     background: #4f4f6d3d;
@@ -817,7 +731,7 @@ div#c-static::after {
     width: 650px;
     height: 500px;
     margin: 10px auto 0;
-    background-image: var(--extension-chicken-url);
+    /* background-image: var(--extension-chicken-url); */
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -1080,18 +994,24 @@ div#c-static::after {
 
 /* Hide the original banner img */
 #app-name-header img {
-    opacity: 0;
+    opacity: 1;
+    display: block;
+    /* background-image: var(--extension-banner-url); */ 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 270px; /* Same height as the original image */
+    width: 100%;   
 }
 
 /* Apply a new background image to the parent <a> tag */
 #app-name-header {
     display: block;
-    background-image: var(--extension-banner-url); 
+    /* background-image: var(--extension-banner-url); */ 
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     height: 270px; /* Same height as the original image */
     width: 100%;   /* Adjust width based on your design */
 }
-
 
