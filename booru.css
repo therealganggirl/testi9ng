@@ -1,6 +1,98 @@
 /* main page where images are */
 
 
+
+
+        /* Modern dark theme styling for the news block */
+
+        
+#news-updates {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px 15px !important;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px rgb(193 31 31);
+    font-family: 'Arial', sans-serif;
+    color: #e0e0e0;
+}
+
+#news-updates ul {
+    list-style-type: disclosure-closed;
+    padding: 5px !important;
+    margin: 5px !important;
+}
+
+
+#news-updates li {
+    padding: 15px !important;
+    background: #3b3b3b;
+    border: 1px solid #505050;
+    border-radius: 10px;
+    transition: background 0.3s, transform 0.2s;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 5px 0px !important;
+}
+
+#news-updates li:hover {
+    background: #454545;
+    transform: scale(1.02);
+}
+
+#news-updates b {
+    font-weight: 700;
+    color: #f1f1f1;
+}
+
+#news-updates a {
+    color: #4da6ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#news-updates a:hover {
+    text-decoration: underline;
+    color: #80c1ff;
+}
+
+/* Style for the close button */
+#close-news-ticker-link {
+    display: inline-block;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: #1f0d0d;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#close-news-ticker-link:hover {
+    background-color: #ff3333;
+    transform: scale(1.15);
+}
+
+#close-news-ticker-link svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    vertical-align: middle;
+    margin-top: 7px;
+}
+
+#close-news-ticker-link:focus {
+    outline: none;
+    box-shadow: 0 0 8px #ff9999;
+}
+
+
+
     /* website logo make it be in center */
 
 
